@@ -5,9 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "ts-node-dev server.ts",
-    "start": "",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tsx watch server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js"
   },
   "repository": {
     "type": "git",
@@ -22,7 +22,8 @@
   "homepage": "https://github.com/p122a-10v3r/Cool-Backend#readme",
   "devDependencies": {
     "@types/node": "^25.1.0",
-    "ts-node-dev": "^2.0.0",
+    "@types/pg": "^8.16.0",
+    "tsx": "^4.21.0",
     "typescript": "^5.9.3"
   },
   "dependencies": {
